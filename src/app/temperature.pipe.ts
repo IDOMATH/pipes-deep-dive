@@ -27,6 +27,6 @@ export class TemperaturePipe implements PipeTransform {
       outputTemp = val;
     }
 
-    return `${outputTemp} ${outputScale}`;
+    return `${outputTemp.toFixed(2)} ${outputScale}`;
   }
 }
